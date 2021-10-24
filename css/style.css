@@ -123,8 +123,15 @@ header a:hover{
 
 /* Boxes */
 
-.boxes-container,
-.two-boxes
+#boxes-container,
+.two-boxes {
+  {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
  {
   display:flex;
   flex-direction: column;
@@ -137,7 +144,6 @@ header a:hover{
   margin-top:20;
   float: center;
   text-align: center;
-  width:100%;
   padding:10px;
   margin: 1em;
 }
@@ -182,10 +188,9 @@ footer{
 }
 
 /* Media Queries */
-@media(min-width: 769px) {
+@media(min-width: 480px) {
   
-  .boxes-container,
-  two-boxes {
+.two-boxes {
     flex-direction: row;
   }
 
@@ -227,6 +232,12 @@ footer{
 }
 
 @media(min-width: 769px){
+  #boxes-container {
+    flex-direction: row;
+  }
+  .two-boxes {
+    flex-direction: row;
+  }
 
 }
 
