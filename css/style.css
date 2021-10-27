@@ -1,3 +1,9 @@
+#whole-body-container,
+.two-boxes 
+{
+  display:flex;
+  flex-direction: column;
+}
 body{
   font: 16px/1.5 Arial, Helvetica,sans-serif;
   padding:0;
@@ -121,36 +127,18 @@ header a:hover{
   width:250px;
 }
 
+
 /* Boxes */
 
-#boxes-container,
-.two-boxes {
-  {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
- {
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.box{
+.planetbox{
   display: flex;
   flex-direction: column;
-  margin-top:20;
-  float: center;
-  text-align: center;
-  padding:10px;
-  margin: 1em;
 }
 
-.img{
-  width:100%;
+.picz{
+  width:250px;
 }
+
 
 /* Sidebar */
 aside#sidebar{
@@ -188,56 +176,35 @@ footer{
 }
 
 /* Media Queries */
-@media(min-width: 480px) {
-  
-.two-boxes {
-    flex-direction: row;
-  }
 
-  header #branding,
-  header nav,
-  header nav li,
-  #newsletter h1,
-  #newsletter form,
-  article#main-col,
-  aside#sidebar{
-    float:none;
-    text-align:center;
-    width:100%;
-  }
+@media(min-width: 768px) {
+  .dblBox {
+      display: flex;
+      flex-direction: row;
+      }
 
-  header{
-    padding-bottom:20px;
-  }
+  .picz {
+      width:150px;
+      }
 
-  #showcase h1{
-    margin-top:40px;
-  }
-
-  #newsletter button, .quote button{
-    display:block;
-    width:30%;
-  }
-
-  #newsletter form input[type="email"], .quote input, .quote textarea{
-    width:100%;
-    margin-bottom:5px;
-  }
-  img {
-    width :70%;
-  }
-  .box {
-    margin: 0.5em;
-  }
 }
 
-@media(min-width: 769px){
-  #boxes-container {
-    flex-direction: row;
-  }
-  .two-boxes {
-    flex-direction: row;
-  }
+@media(min-width: 1080px){
+  #boxesContainer {
+      display:flex;
+      flex-direction:row;
+      flex-wrap: nowrap;
+    }
 
+  .picz{
+      width:100px;
+    }
+}
+
+@media(min-width: 1440px){
+
+  .picz{
+      width:50px;
+    }
 }
 

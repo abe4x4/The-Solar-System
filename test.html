@@ -9,14 +9,17 @@
     <title>The Solar System | Home</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
-  <body>
 
-    <header>
-      <div class="container">
+  <body>
+    <div id="whole-body-container">
+    
+    <div class="header">
+      <header>
+      <div class="header-container">
         <div id="logoArea">
           <center><h1><span class="highlight">The</span> Solar System</span></h1></center>
-          </div>
-          <div id="bigNavigation">
+        </div>
+        <div id="bigNavigation">
             <nav>
               <ul>
                 <li class="current"><a href="index-abe.html">Home</a></li>
@@ -24,17 +27,19 @@
                 <li><a href="./html/more.html">More</a></li>
               </ul>
             </nav>
-          </div>
+        </div>
       </div>
     </header>
+  </div>
 
     <section id="showcase">
-      <div class="container">
+      <div class="intro-container">
         <h3>Fast Facts about the Solar System</h3>
-        <p><h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu luctus ipsum, rhoncus semper magna. Nulla nec magna sit amet sem interdum condimentum.</p></h5>
-        <p><h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu luctus ipsum, rhoncus semper magna. Nulla nec magna sit amet sem interdum condimentum.</p></h5>
+        <p><h5>
+          The Solar System[b] is the gravitationally bound system of the Sun and the objects that orbit it, either directly or indirectly.[c] Of the objects that orbit the Sun directly, the largest are the eight planets,[d] with the remainder being smaller objects, the dwarf planets and small Solar System bodies. Of the objects that orbit the Sun indirectly—the natural satellites—two are larger than the smallest planet, Mercury.[e]
+        </p></h5>
       </div>
-    </section>
+     </section> 
 
     <section id="newsletter">
       <div class="container">
@@ -46,64 +51,105 @@
       </div>
     </section>
 
-    <section id="flex-box">
-      <div class="container">
-        <div class="box">
-          <a href="./html/sun.html" target="_blank"><img src="./assets/img/sun.png"></a>
-          <h3>The Sun</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
-        </div>
-        <div class="box">
-          <img src="./assets/img/mercury.png">
-          <h3>Mercury.png</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
-        </div>
-        <div class="box">
-          <img src="./assets/img/venus.png" width ="70%">
-          <h3>Venus</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
-        </div>
-        <div class="box">
-          <img src="./assets/img/earth.png">
-          <h3>The Earth</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
-        </div>
-        <div class="box">
-          <img src="./assets/img/moon.png">
-          <h3>The Moon</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
-        </div>
-        <div class="box">
-          <img src="./assets/img/mars.png">
-          <h3>Mars</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
-        </div>
-        <div class="box">
-          <img src="./assets/img/jupiter.png">
-          <h3>Jupiter</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
-        </div>
-        <div class="box">
-          <img src="./assets/img/saturn.png">
-          <h3>Saturn</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
-        </div>
-        <div class="box">
-          <img src="./assets/img/uranus.png">
-          <h3>uranus</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
-        </div>
-        <div class="box">
-          <img src="./assets/img/neptune.png">
-          <h3>Neptune</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
-        </div>
-      </div>
-    </section>
+<div id="boxesContainer">
 
-    <footer>
-      <p>Knowledge Plus, Copyright &copy; 2021</p>
-    </footer>
+      <div class="dblBox">
+
+          <div class="planetBox">
+            <a href="./html/sun.html" target="_blank">
+              <img class="picz" src="./assets/img/0sun.png"></a>
+            <h3>The Sun</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+          </div>
+
+          <div class="planetBox">
+            <a href="./html/mercury.html" target="_blank">
+            <img class="picz" src="./assets/img/0mercury.png"></a>
+            <h3>Mercury</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+          </div>
+
+      </div>
+
+      <div class="dblBox">
+
+          <div class="planetBox">
+            <a href="./html/venus.html" target="_blank">
+            <img class="picz" src="./assets/img/0venus.png"></a>
+            <h3>Venus</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+          </div>
+
+          <div class="planetBox">
+            <a href="./html/earth.html" target="_blank">
+            <img class="picz" src="./assets/img/0earth.png"></a>
+            <h3>The Earth</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+          </div>
+
+      </div>
+
+      <div class="dblBox">
+
+          <div class="planetBox">
+            <a href="./html/moon.html" target="_blank">
+            <img class="picz" src="./assets/img/0moon.png"></a>
+            <h3>The Moon</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+          </div>
+
+          <div class="planetBox">
+            <a href="./html/mars.html" target="_blank">
+            <img class="picz" src="./assets/img/0mars.png"></a>
+            <h3>Mars</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+          </div>
+
+      </div>
+
+      <div class="dblBox">
+
+          <div class="planetBox">
+            <a href="./html/jupiter.html" target="_blank">
+            <img class="picz" src="./assets/img/0jupiter.png"></a>
+            <h3>Jupiter</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+          </div>
+
+          <div class="planetBox">
+            <a href="./html/saturn.html" target="_blank">
+            <img class="picz" src="./assets/img/0saturn.png"></a>
+            <h3>Saturn</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+          </div>
+
+      </div>
+
+      <div class="dblBox">
+
+          <div class="planetBox">
+            <a href="./html/uranus.html" target="_blank">
+            <img class="picz" src="./assets/img/0uranus.png"></a>
+            <h3>uranus</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+          </div>
+
+          <div class="planetBox">
+            <a href="./html/neptune.html" target="_blank">
+            <img class="picz" src="./assets/img/0neptune.png"></a>
+            <h3>Neptune</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+          </div>
+
+      </div>
+
+</div>
+
+      <div class="footer-container">
+        <footer>
+          <p>Knowledge Plus, Copyright &copy; 2021</p>
+        </footer>
+      </div>
     </div>
   </body>
 </html>

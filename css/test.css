@@ -1,0 +1,44 @@
+
+/* Boxes */
+
+.planetbox{
+  display: flex;
+  flex-direction: column;
+}
+
+.picz{
+  width:250px;
+}
+
+/* Media Queries */
+
+@media(min-width: 768px) {
+    .dblBox {
+        display: flex;
+        flex-direction: row;
+        }
+
+    .picz {
+        width:150px;
+        }
+  
+}
+
+@media(min-width: 1080px){
+    #boxesContainer {
+        display:flex;
+        flex-direction:row;
+        flex-wrap: nowrap;
+      }
+
+    .picz{
+        width:100px;
+      }
+}
+
+@media(min-width: 1440px){
+
+    .picz{
+        width:50px;
+      }
+}
