@@ -1,14 +1,28 @@
-#whole-body-container,
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     font: 16px/1.5 Arial, Helvetica, sans-serif;
+    display:flex;
     padding: 0;
     margin: 0;
+    align-items: center;
+    justify-content: center;
     background-color: #f4f4f4;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 
 /* Global */
+* {
+    box-sizing: border-box;
+}
 .container,
+#logoArea,
 .section,
 .planetBox,
 .quadBox,
@@ -55,15 +69,29 @@ ul {
     margin-bottom: 10px;
 }
 
+#intro {
+    background:url(../assets/img/solar-system.png);
+    display:flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    color:#ffffff;
+    min-height: 50vh;
+}
+
 
 /* Header **/
 
 header {
+    align-items: center;
+    justify-content: center;
     background: #040313;
     color: #ffffff;
-    padding-top: 30px;
-    min-height: 70px;
     border-bottom: #e8491d 3px solid;
+    width:100%;
+    font-size: 1.5rem;
 }
 
 header a {
@@ -101,6 +129,12 @@ header .current a {
 header a:hover {
     color: #cccccc;
     font-weight: bold;
+}
+
+#logoArea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -159,7 +193,8 @@ header a:hover {
 .planetBox {
     display:flex;
     flex-direction: column;
-    padding: 1em; 
+    align-items: center;
+    justify-content: center;
 }
 
 .planetbox {
@@ -168,12 +203,12 @@ header a:hover {
     width:10%;
 }
 .planetBox {
-    padding: 1em;
     background-color: #8ed391;
+    margin:0;
 }
 
 .picz {
-    width: 50%;
+    width: 60%;
 }
 
 footer {
@@ -197,6 +232,9 @@ footer {
         display:flex;
         flex-direction: row;
     }
+    .picz {
+        width: 40%;
+    }
     
     
 }
@@ -212,6 +250,9 @@ footer {
     #boxes {
         margin-top: 1em;
     }
+    .picz {
+        width: 60%;
+    }
 }
 
 @media(min-width: 1440px) {
@@ -221,10 +262,15 @@ footer {
     #boxes {
         flex-direction: row;
         flex-wrap: nowrap;
+        
     }
     .planetBox {
         padding: 1em;
         background-color: #d3bf4e;
+        
+    }
+    .picz {
+        width: 90%;
     }
    
 }
