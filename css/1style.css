@@ -225,6 +225,25 @@ footer {
     text-align: center;
 }
 
+/*   nth   */
+#cell:nth-of-type(2){
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+    font-size: 1.2em;
+    color: darkred;
+  }
+
+  /*
+  #cell:nth-child(odd){
+    background-color: blue;
+  }
+#nth:nth-of-type(odd){
+    background-color: rgb(252, 101, 101);
+  }
+#nth:nth-child(3){
+    background-color: rgb(76, 76, 230);
+  }
+  */
+
 
 /* Media Queries */
 
