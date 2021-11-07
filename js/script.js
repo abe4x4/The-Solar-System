@@ -1,0 +1,2 @@
+document.querySelector('#copyright-year').innerText = new Date().getFullYear();
+/*You could also use textContent instead of innerText. I didn’t use innerHTML because there are no inner element tags added (e.g. <strong></strong>). */

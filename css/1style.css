@@ -1,11 +1,10 @@
+/*
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-
-* {
-    box-sizing: border-box;
-}
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 body {
-    font: 16px/1.5 Arial, Helvetica, sans-serif;
+    font: 1.1rem/1.2 Roboto, Arial, Helvetica, sans-serif;
     display:flex;
     padding: 0;
     margin: 0;
@@ -14,17 +13,13 @@ body {
     background-color: #f4f4f4;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #d3dad6;  
 }
-body {
-  background-color: #3E604F;  
-}
-
 
 /* Global */
 * {
     box-sizing: border-box;
 }
-.container,
 #intro,
 #logoArea,
 #newsletter,
@@ -33,7 +28,6 @@ body {
 .quadBox,
 .dblBox {
     display:flex;
-    justify-content: space-between;
 }
 
 .quadBox,
@@ -42,14 +36,8 @@ body {
     flex-direction: column;
 }
 
-
 .container {
-    width:auto;
-    margin: auto;
-    overflow: hidden;
-}
-.container {
-    border:1px rgb(192, 2, 97) solid;
+    border:5px rgb(192, 2, 97) solid;
     padding:.3em;
   }
 
@@ -210,7 +198,8 @@ header a:hover {
     align-items: center;
     justify-content: center;
     color:#ffffff;
-    background-color: #220468;
+    background-color: #685d83;
+    padding: .5rem;
 }
 
 .picz {
@@ -218,32 +207,25 @@ header a:hover {
 }
 
 footer {
-    padding: 20px;
-    margin-top: 20px;
+    padding:3em;
     color: #ffffff;
     background-color: #D85214;
     text-align: center;
+    min-width: 100%;
 }
 
 /*   nth   */
-#cell:nth-of-type(2){
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-    font-size: 1.2em;
-    color: darkred;
+#cell:nth-of-type(even){
+    font-size: 1.1em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(246, 250, 7);
   }
 
-  /*
-  #cell:nth-child(odd){
-    background-color: blue;
-  }
-#nth:nth-of-type(odd){
-    background-color: rgb(252, 101, 101);
-  }
-#nth:nth-child(3){
-    background-color: rgb(76, 76, 230);
-  }
-  */
-
+#cell:nth-of-type(3){
+    justify-content: right;
+    align-items: flex-start;
+    color: rgb(247, 221, 221);
+}
 
 /* Media Queries */
 
@@ -251,7 +233,7 @@ footer {
     .planetBox {
         flex-direction: column;
         padding: 1em;
-        background-color: #c2e8f5;
+        background-color: #33bdeb;
     }
     .dblBox {
         display:flex;
@@ -275,7 +257,7 @@ footer {
     }
     .planetBox {
         padding: 1em;
-        background-color: #f882d1;
+        background-color: #f33db7;
     }
     #boxes {
         margin-top: 1em;
@@ -297,7 +279,7 @@ footer {
     }
     .planetBox {
         padding: 1em;
-        background-color: #d3bf4e;
+        background-color: #7a1cf5;
         
     }
     .picz {
