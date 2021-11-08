@@ -16,10 +16,11 @@
         <script src="./js/nav.js" defer></script>
         <script src="./js/script.js" defer></script>
     </head>
-    <body>
+    <body class="container">
         <header>
             <div id="logoArea">
                 <img id="logo" src="./assets/img/logoz.png " alt="Company Name"></a>
+                <h6>presented by: <br>Knowledge Plus</h6>
             </div>
             <div id="name">
                 <h1>
@@ -27,14 +28,15 @@
                 </h1>
             </div>
         </header>
-        <nav class="navbar">
-            <div class="brand-title">Knowledge Plus</div>
+        <nav class="navbar" class="container">
+            <div class="toggle">
             <a href="#" class="toggle-button">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </a>
-            <div class="navbar-links">
+            </div>
+            <div class="navbar-links" class="container">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -45,8 +47,8 @@
                 </ul>
             </div>      
         </nav>
-        <section class="main">      
-            <div id="intro">
+        <section class="main" class="container">      
+            <div id="intro" class="container">
                 <h2>
                     Fast Facts about the Solar System
                 </h2>
@@ -60,21 +62,21 @@
                 </h3>
                 </p>
             </div>  
-            <div class="solarVid">
+            <div class="solarVid" class="container">
                 <video  width="60%" controls>
                     <source src=" assets/vid/ss101.mp4 " type="video/mp4 ">
                 </video>
             </div>
         </section>
-            <section id="newsletter" class ="container">
+            <section id="newsletter" class="container">
                 <p><h4>
                     Be the First to know about New Blog Articles presented to you by Knowledge Plus</h4></p>
-                <form>
+                <form  class="container">
                     <input type="email" placeholder="Enter Email Here...">
                     <button type="submit" class="button_1">Subscribe</button>
                 </form>
             </section>
-    <div id="boxes">
+    <div id="boxes" class="container">
         <div class="quadBox" class ="container">
             <div class="dblBox " class ="container">
                     <div class="planetBox" class ="container">
@@ -214,9 +216,9 @@
             <div class="dblBox" class ="container">
                 <div class="planetBox" class ="container">
                     <div id="cell">
-                      <a href="./pages/uranus.html " target="_blank ">
-                      <img class="picz " src="./assets/img/uranusq.png " alt="Uranus">
-                      </a>
+                        <a href="./pages/uranus.html " target="_blank ">
+                        <img class="picz " src="./assets/img/uranusq.png " alt="Uranus">
+                        </a>
                     </div>
                     <div id="cell">
                         <h3>
@@ -224,7 +226,8 @@
                         </h3>
                     </div>
                     <div id="cell">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies
                         </p>
                     </div>
                 </div>                       
@@ -235,11 +238,13 @@
                         </a>
                     </div>
                     <div id="cell">
-                        <h3>Neptune
+                        <h3>
+                            Neptune
                         </h3>
                     </div>
                     <div id="cell">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies
                         </p>
                     </div>
                 </div>
@@ -248,15 +253,17 @@
                 <div class="planetBox" class ="container">
                     <div id="cell">
                         <a href="./pages/shuttle.html " target="_blank ">
-                        <img class="picz " src="./assets/img/Shuttleq.png " alt="Exploration">
+                            <img class="picz " src="./assets/img/Shuttleq.png " alt="Exploration">
                         </a>
                     </div>
                     <div id="cell">
-                        <h3>Space Exploration
+                        <h3>
+                            Space
                         </h3>
                     </div>
                     <div id="cell">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies
                         </p>
                     </div>
                 </div>
@@ -267,18 +274,20 @@
                         </a>
                     </div>
                     <div id="cell">
-                        <h3>The Earth
+                        <h3>
+                            galaxies
                         </h3>
                     </div>
                     <div id="cell">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <footer>
+    <footer class="container">
       <p>Knowledge Plus, Copyright &copy; <span id="copyright-year">2020</span></p>
     </footer>
   </body>

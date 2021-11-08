@@ -7,8 +7,6 @@
 * {
     box-sizing: border-box;
 }
-
-
 body {
     font: 1.1rem/1.2 Roboto, Arial, Helvetica, sans-serif;
     display:flex;
@@ -19,6 +17,14 @@ body {
     background-color: #f4f4f4;
     flex-direction: column;
     background-color: #d3dad6; 
+    width:100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width:100%;
 }
 
@@ -104,6 +110,8 @@ header {
 
 .solarVid {
     display:flex;
+    justify-content: center;
+    align-items: center;
     max-height: 60vh;
 }
 
@@ -117,8 +125,8 @@ header {
     border-top: #e8491d 3px solid;
     width: 100%;
     align-items: center;
-    justify-content: space-between;
-    padding-right: 75rem;
+    justify-content: center;
+    padding-right: 2rem;
     padding-left: 2rem;
 
 }
@@ -170,16 +178,24 @@ footer {
 }
 
 /*   nth   */
+#cell:nth-of-type(1){
+    justify-content: center;
+    align-items: center;
+}
+
 #cell:nth-of-type(even){
-    font-size: 1.1em;
+    font-size: .9em;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    justify-content: center;
     color: rgb(246, 250, 7);
   }
 
 #cell:nth-of-type(3){
-    justify-content: right;
+    font-size: .8em;
+    justify-content: center;
     align-items: flex-start;
-    color: rgb(247, 221, 221);
+    color: rgb(243, 117, 212);
 }
 
 /* Media Queries */
@@ -215,6 +231,8 @@ footer {
 .picz {
     max-width: 80%;
 }
+#logo {
+    max-width: 20%;
     
 }
 
@@ -229,17 +247,25 @@ footer {
    {
       padding: 1rem;
   }
+#logo {
+    max-width: 40%;
+}
+   
+header {
+    flex-direction: row;
+}
   
   .main {
       flex-direction: row;
       justify-content: space-between;
+      align-items: center;
   }
   
   #intro {
-      width: 70%;
+      width: 50%;
   }
   .solarVid {
-      width: 30%;
+      width: 50%;
   }
     
 #boxes,
@@ -247,6 +273,10 @@ footer {
 .dblBox {
     display:flex;
     flex-direction: row;
+}
+.planetBox {
+    height: 22vw;
+    justify-content: space-between;
 }
 
 body {
@@ -256,6 +286,6 @@ body {
     }
 
 .picz {
-    max-width: 80%;
+    max-width: 90%;
 }
 }
