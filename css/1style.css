@@ -3,6 +3,12 @@
 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
+/* Global */
+* {
+    box-sizing: border-box;
+}
+
+
 body {
     font: 1.1rem/1.2 Roboto, Arial, Helvetica, sans-serif;
     display:flex;
@@ -12,16 +18,15 @@ body {
     justify-content: center;
     background-color: #f4f4f4;
     flex-direction: column;
-    min-height: 100vh;
-    background-color: #d3dad6;  
+    background-color: #d3dad6; 
+    width:100%;
 }
 
-/* Global */
-* {
-    box-sizing: border-box;
+#logo {
+    max-width: 40%;
 }
-#intro,
-#logoArea,
+
+
 #newsletter,
 .section,
 .planetBox,
@@ -35,11 +40,6 @@ body {
 .planetBox {
     flex-direction: column;
 }
-
-.container {
-    border:5px rgb(192, 2, 97) solid;
-    padding:.3em;
-  }
 
 ul {
     margin: 0;
@@ -55,110 +55,57 @@ ul {
     color: #ffffff;
 }
 
-.dark {
-    padding: 15px;
-    background: #35424a;
-    color: #ffffff;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-#intro {
-    
-    display:flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-    align-items: center;
-    justify-content: center;
-    color:#ffffff;
-    min-height: 50vh;
-}
- #intro {
-    background:url(../assets/img/solar-system.png) no-repeat;
-    background-position: center center;
-    /*background-attachment: fixed;*/
-    background-size: cover;
- }
-
 /* Header **/
 
 header {
+    display:flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    background: #040313;
+    padding: 1rem;
+    background: #000;
     color: #ffffff;
-    border-bottom: #e8491d 3px solid;
+    border-bottom: #e8491d .5rem solid;
     width:100%;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
-header a {
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-}
 
-header li {
-    float: center;
-    display: inline;
-    padding: 0 20px 0 20px;
-}
-
-header #branding {
-    float: center;
-}
-
-header #branding h1 {
-    margin: 0;
-}
-
-header nav {
-    float: center;
-    margin-top: 10px;
-}
-
-header .highlight,
-header .current a {
+.highlight {
     color: #D85214;
     font-weight: bold;
 }
 
-header a:hover {
-    color: #cccccc;
-    font-weight: bold;
+
+/* Navigation */
+
+.navbar {
+    border-bottom: #e8491d .5rem solid;
 }
 
-#logoArea {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-/* Showcase */
-
-#showcaseDAD {
-    display: flex;
+/* main */
+.main {
+    display:flex;
     flex-direction: column;
-    min-height: 400px;
-    background: url("../assets/img/solar-system.png") no-repeat;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    background:url(../assets/img/solar-system.png) no-repeat;
+    background-position: center center;
+    /*background-attachment: fixed;*/
     background-size: cover;
-    text-align: center;
-    color: #ffffff;
 }
 
-#showcase h1 {
-    margin-top: 100px;
-    font-size: 55px;
-    margin-bottom: 10px;
+#intro {
+    min-height: 34vh;
+    padding: 1rem;
+    margin: 0;
+    color:#ffffff;
 }
 
-#showcase p {
-    font-size: 20px;
+.solarVid {
+    display:flex;
+    max-height: 60vh;
 }
-
 
 /* Newsletter */
 
@@ -191,19 +138,24 @@ header a:hover {
 
 
 /* Boxes */
+ #boxes,
+ .quadBox,
+ .dblBox,
+ .planetBox {
+     margin: 0;
+     padding: 0;
+ }
+.picz {
+    max-width: 80%;
+}
+
 
 .planetBox {
-    display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color:#ffffff;
-    background-color: #685d83;
-    padding: .5rem;
-}
-
-.picz {
-    width: 60%;
+    color:#fff;
+    background-color: #000;
 }
 
 footer {
@@ -211,7 +163,8 @@ footer {
     color: #ffffff;
     background-color: #D85214;
     text-align: center;
-    min-width: 100%;
+    width: 100vw;
+    padding:.5rem;
 }
 
 /*   nth   */
@@ -228,62 +181,72 @@ footer {
 }
 
 /* Media Queries */
-
 @media(min-width: 768px) {
     .planetBox {
         flex-direction: column;
         padding: 1em;
-        background-color: #33bdeb;
+    
     }
     .dblBox {
         display:flex;
         flex-direction: row;
     }
     .picz {
-        width: 40%;
+        max-width: 80%;
     }
+    
     
     
 }
 
 @media(min-width: 1080px) {
     
-    .container{
-    align-items: center;
-    justify-content: center;
-    }
     .quadBox {
         flex-direction: row;
     }
     .planetBox {
         padding: 1em;
-        background-color: #f33db7;
     }
     #boxes {
         margin-top: 1em;
     }
-    .picz {
-        width: 60%;
-    }
+.picz {
+    max-width: 80%;
+}
+    
 }
 
 @media(min-width: 1440px) {
-    .container {
-        max-width: 90%;
-    }
-    #boxes {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        
-    }
-    .planetBox {
-        padding: 1em;
-        background-color: #7a1cf5;
-        
-    }
-    .picz {
+  body {
+      width: 90%
+  }
+  
+  .main {
+      flex-direction: row;
+      justify-content: space-between;
+  }
+  
+  #intro {
+      width: 70%;
+  }
+  .solarVid {
+      width: 30%;
+  }
+    
+#boxes,
+.quadBox,
+.dblBox {
+    display:flex;
+    flex-direction: row;
+}
+
+body {
+        justify-content: center;
         width: 90%;
+        margin:auto;
     }
-   
+
+.picz {
+    max-width: 80%;
+}
 }
