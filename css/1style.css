@@ -111,13 +111,15 @@ header {
 
 #newsletter {
     display:flex;
-    padding: 15px;
+    padding: 2rem;
     color: #ffffff;
     background: #040313;
     border-top: #e8491d 3px solid;
     width: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding-right: 75rem;
+    padding-left: 2rem;
 
 }
 
@@ -163,7 +165,7 @@ footer {
     color: #ffffff;
     background-color: #D85214;
     text-align: center;
-    width: 100vw;
+    width: 100%;
     padding:.5rem;
 }
 
@@ -219,6 +221,13 @@ footer {
 @media(min-width: 1440px) {
   body {
       width: 90%
+  }
+  header, 
+  .navbar,
+  .main,
+  #intro,
+   {
+      padding: 1rem;
   }
   
   .main {
