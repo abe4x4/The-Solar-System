@@ -1,0 +1,32 @@
+@media(min-width: 1081px) {
+    
+  body {
+      max-width: 80%;
+  }
+  
+  .dblBox,
+  .quadBox {
+      flex-direction: row;
+  }
+  .planetBox {
+    flex-direction: column;
+      padding: 1em;
+  }
+  .boxes {
+    flex-direction: column;
+      margin-top: 1em;
+  }
+  .picz {
+  max-width: 80%;
+  }
+  .logo {
+      max-width: 20%;
+  
+  }
+  .boxes,
+  .quadBox,
+  .dblBox { 
+             
+      display:flex;
+}
+}

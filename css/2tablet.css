@@ -1,0 +1,15 @@
+@media(min-width: 769px) {
+  .planetBox {
+      flex-direction: column;
+      padding: 1em;
+  }
+  
+  .dblBox {
+      display:flex;
+      flex-direction: row;
+  }
+  .picz {
+      max-width: 80%;
+  }
+  
+}

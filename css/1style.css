@@ -8,33 +8,44 @@
     box-sizing: border-box;
 }
 body {
-    font: 1.1rem/1.2 Roboto, Arial, Helvetica, sans-serif;
+    font: .9rem/1.2 Roboto, Arial, Helvetica, sans-serif;
     display:flex;
     padding: 0;
     margin: 0;
     align-items: center;
     justify-content: center;
-    background-color: #f4f4f4;
     flex-direction: column;
-    background-color: #d3dad6; 
-    width:100%;
+    background-color: lightgray; 
+    background:url(../assets/img/solar-system.png) no-repeat;
+    background-position: center center;
+    /*background-attachment: fixed;*/
+    background-size: cover;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width:100%;
+header {
+    width: 100vw;
 }
 
-#logo {
-    max-width: 40%;
+.name {
+    font-size: .7rem;
+}
+
+/* logo */
+.logo,
+.logoArea {
+    width: 15vw;
+
+}
+#boxes{
+    background-color: black;
+}
+.planetBox {
+    min-width: 100vw;
+    background-color: black;
 }
 
 
-#newsletter,
-.section,
+.newsletter,
 .planetBox,
 .quadBox,
 .dblBox {
@@ -53,7 +64,7 @@ ul {
 }
 
 .button_1 {
-    height: 38px;
+    height: 30px;
     background: #e8491d;
     border: 0;
     padding-left: 20px;
@@ -67,14 +78,17 @@ header {
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    background: #000;
+    padding: .7rem 1rem 0rem 1rem;
+    background: rgb(192, 187, 187);
     color: #ffffff;
-    border-bottom: #e8491d .5rem solid;
-    width:100%;
-    font-size: 2rem;
+    border-bottom: #e8491d .3rem solid;
+    font-size: 1rem;
+    
 }
 
+.name {
+    display:flex;
+}
 
 .highlight {
     color: #D85214;
@@ -85,14 +99,14 @@ header {
 /* Navigation */
 
 .navbar {
-    border-bottom: #e8491d .5rem solid;
+    border-bottom: #e8491d .3rem solid;
 }
 
 /* main */
 .main {
     display:flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     margin: auto;
     justify-content: space-between;
     background:url(../assets/img/solar-system.png) no-repeat;
@@ -101,13 +115,12 @@ header {
     background-size: cover;
 }
 
-#intro {
+.intro {
     min-height: 34vh;
     padding: 1rem;
     margin: 0;
     color:#ffffff;
 }
-
 .solarVid {
     display:flex;
     justify-content: center;
@@ -117,7 +130,7 @@ header {
 
 /* Newsletter */
 
-#newsletter {
+.newsletter {
     display:flex;
     padding: 2rem;
     color: #ffffff;
@@ -131,16 +144,16 @@ header {
 
 }
 
-#newsletter h1 {
+.newsletter h1 {
     float: left;
 }
 
-#newsletter form {
+.newsletter form {
     float: right;
     margin-top: 15px;
 }
 
-#newsletter input[type="email"] {
+.newsletter input[type="email"] {
     padding: 4px;
     height: 25px;
     width: 250px;
@@ -148,7 +161,7 @@ header {
 
 
 /* Boxes */
- #boxes,
+ .boxes,
  .quadBox,
  .dblBox,
  .planetBox {
@@ -166,6 +179,7 @@ header {
     justify-content: center;
     color:#fff;
     background-color: #000;
+    max-width: 200px;
 }
 
 footer {
@@ -198,94 +212,6 @@ footer {
     color: rgb(243, 117, 212);
 }
 
-/* Media Queries */
-@media(min-width: 768px) {
-    .planetBox {
-        flex-direction: column;
-        padding: 1em;
-    
-    }
-    .dblBox {
-        display:flex;
-        flex-direction: row;
-    }
-    .picz {
-        max-width: 80%;
-    }
-    
-    
-    
-}
 
-@media(min-width: 1080px) {
-    
-    .quadBox {
-        flex-direction: row;
-    }
-    .planetBox {
-        padding: 1em;
-    }
-    #boxes {
-        margin-top: 1em;
-    }
-.picz {
-    max-width: 80%;
-}
-#logo {
-    max-width: 20%;
-    
-}
 
-@media(min-width: 1440px) {
-  body {
-      width: 90%
-  }
-  header, 
-  .navbar,
-  .main,
-  #intro,
-   {
-      padding: 1rem;
-  }
-#logo {
-    max-width: 40%;
-}
-   
-header {
-    flex-direction: row;
-}
-  
-  .main {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-  }
-  
-  #intro {
-      width: 50%;
-  }
-  .solarVid {
-      width: 50%;
-  }
-    
-#boxes,
-.quadBox,
-.dblBox {
-    display:flex;
-    flex-direction: row;
-}
-.planetBox {
-    height: 22vw;
-    justify-content: space-between;
-}
 
-body {
-        justify-content: center;
-        width: 90%;
-        margin:auto;
-    }
-
-.picz {
-    max-width: 90%;
-}
-}
