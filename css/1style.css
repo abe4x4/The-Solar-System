@@ -6,58 +6,106 @@
 /* Global */
 * {
     box-sizing: border-box;
+    margin:0;
+    padding:0;
 }
+.grid-container {
+        display:grid;
+        grid-template-rows: auto auto 34em auto auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        position: relative;
+        padding: 0;
+        width: 100vw;
+        grid-template-areas:
+        "header header header header"
+        "nav nav nav nav" 
+        "main main main main"
+        "video video video video"
+        "footer footer footer footer";
+        
+  }
+  .grid-item {
+        position:relative;
+        padding: 0;
+        padding-top: 0;
+        width: 100vw;
+        color: rgb(252, 252, 252);
+  }
+.grid-item-1{grid-area:header;}
+.grid-item-2{grid-area:nav;}
+.grid-item-3{grid-area:main;}
+.grid-item-4{grid-area:video;}
+.grid-item-5{grid-area:footer;}
 body {
+    position: relative;
+    border:o;
+    margin:0;
+    padding:0;
     font: .9rem/1.2 Roboto, Arial, Helvetica, sans-serif;
-    display:flex;
+    color:rgb(7, 0, 0);    
     padding: 0;
     margin: 0;
+    width: 100vw;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: lightgray; 
-    background:url(../assets/img/solar-system.png) no-repeat;
+    background-color: #333;
+    border-top: #e8491d 1rem solid;
+}
+/* logo */
+.logo,
+.logoArea {
+    width: 20vw;
+}
+.flex-container{
+    margin:0;
+    padding: 0;
+}
+.flex-banner {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+    background-color: #333;
+    padding:1em;
+    height:1fr;
+    width: 100vw;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.flex-nav {
+    display:flex;
+    height: 1fr;
+    width: 100vw;
+}
+.flex-main{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    min-height:1fr;
+    width: 100vw;
+    min-height: 475px;
+    background:url(../assets/img/mobile-img.png) no-repeat;
     background-position: center center;
     /*background-attachment: fixed;*/
     background-size: cover;
 }
-
-header {
-    width: 100vw;
-}
-
-.name {
-    font-size: .7rem;
-}
-
-/* logo */
-.logo,
-.logoArea {
-    width: 15vw;
-
-}
-#boxes{
-    background-color: black;
-}
-.planetBox {
-    min-width: 100vw;
-    background-color: black;
-}
-
-
-.newsletter,
-.planetBox,
-.quadBox,
-.dblBox {
-    display:flex;
-}
-
-.quadBox,
-.dblBox,
-.planetBox {
+.flex-video{
+    display: flex;
     flex-direction: column;
+    justify-content:space-between;
+    align-items:center;
+    width:100vw;
+    background-color: #333;
 }
-
+.flex-footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding:1rem;
+}
 ul {
     margin: 0;
     padding: 0;
@@ -71,124 +119,25 @@ ul {
     padding-right: 20px;
     color: #ffffff;
 }
-
-/* Header **/
-
-header {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: .7rem 1rem 0rem 1rem;
-    background: rgb(192, 187, 187);
-    color: #ffffff;
-    border-bottom: #e8491d .3rem solid;
-    font-size: 1rem;
-    
-}
-
-.name {
-    display:flex;
-}
-
 .highlight {
     color: #D85214;
     font-weight: bold;
 }
-
-
 /* Navigation */
-
 .navbar {
     border-bottom: #e8491d .3rem solid;
+    min-height: 65px;
 }
 
 /* main */
-.main {
-    display:flex;
-    flex-direction: column;
-    width: 100vw;
-    margin: auto;
-    justify-content: space-between;
-    background:url(../assets/img/solar-system.png) no-repeat;
-    background-position: center center;
-    /*background-attachment: fixed;*/
-    background-size: cover;
-}
-
-.intro {
-    min-height: 34vh;
-    padding: 1rem;
-    margin: 0;
-    color:#ffffff;
-}
-.solarVid {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    max-height: 60vh;
-}
-
-/* Newsletter */
-
-.newsletter {
-    display:flex;
-    padding: 2rem;
-    color: #ffffff;
-    background: #040313;
-    border-top: #e8491d 3px solid;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    padding-right: 2rem;
-    padding-left: 2rem;
-
-}
-
-.newsletter h1 {
-    float: left;
-}
-
-.newsletter form {
-    float: right;
-    margin-top: 15px;
-}
-
-.newsletter input[type="email"] {
-    padding: 4px;
-    height: 25px;
-    width: 250px;
-}
-
-
-/* Boxes */
- .boxes,
- .quadBox,
- .dblBox,
- .planetBox {
-     margin: 0;
-     padding: 0;
- }
-.picz {
-    max-width: 80%;
-}
-
-
-.planetBox {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color:#fff;
-    background-color: #000;
-    max-width: 200px;
-}
-
 footer {
-    padding:3em;
     color: #ffffff;
-    background-color: #D85214;
+    background-color: #e8491d;
     text-align: center;
-    width: 100%;
-    padding:.5rem;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 4vh;
 }
 
 /*   nth   */
