@@ -52,10 +52,27 @@ body {
     background-color: #333;
     border-top: #e8491d 1rem solid;
 }
+<<<<<<< HEAD
 /* logo */
 .logo,
 .logoArea {
     width: 20vw;
+=======
+
+#joe {
+    background:url(../assets/img/solar00.png) no-repeat;
+    background-position: center center;
+    /*background-attachment: fixed;*/
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+>>>>>>> a38a6ccc03208a79b1825ecb7643474e4cd55eac
 }
 .flex-container{
     margin:0;
@@ -119,6 +136,24 @@ ul {
     padding-right: 20px;
     color: #ffffff;
 }
+<<<<<<< HEAD
+=======
+
+/* Header **/
+
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    color: #ffffff;
+    border-bottom: #e8491d .5rem solid;
+    width:100%;
+    font-size: 2rem;
+}
+
+
+>>>>>>> a38a6ccc03208a79b1825ecb7643474e4cd55eac
 .highlight {
     color: #D85214;
     font-weight: bold;
@@ -130,6 +165,83 @@ ul {
 }
 
 /* main */
+<<<<<<< HEAD
+=======
+.main {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    
+}
+
+#intro {
+    min-height: 34vh;
+    padding: 1rem;
+    margin: 0;
+    color:#ffffff;
+}
+
+.solarVid {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 60vh;
+}
+
+/* Newsletter */
+
+#newsletter {
+    display:flex;
+    padding: 2rem;
+    color: #ffffff;
+    border-top: #e8491d 3px solid;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-right: 2rem;
+    padding-left: 2rem;
+
+}
+
+#newsletter h1 {
+    float: left;
+}
+
+#newsletter form {
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input[type="email"] {
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+
+/* Boxes */
+ #boxes,
+ .quadBox,
+ .dblBox,
+ .planetBox {
+     margin: 0;
+     padding: 0;
+ }
+.picz {
+
+}
+
+
+.planetBox {
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+    color:#fff;
+}
+
+>>>>>>> a38a6ccc03208a79b1825ecb7643474e4cd55eac
 footer {
     color: #ffffff;
     background-color: #e8491d;
