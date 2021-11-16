@@ -1,7 +1,7 @@
 # The-Solar-System
 Code Louisville FEWD Sept 21 Project
 
-URL on github pages: https://abe4x4.github.io/The_Solar_System_Exploration/index.html
+URL on github pages: https://abe4x4.github.io/The_Solar_System_Exploration/
 
 Inspired by NASA "Solar System Exploration" Site: https://solarsystem.nasa.gov/
 
