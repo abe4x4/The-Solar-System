@@ -1,32 +1,57 @@
 @media(min-width: 1081px) {
-    
-  body {
-      max-width: 80%;
+  .flex-main-3{
+    display:flex;
+    align-items: center;
+    min-height:1fr;
+    width: 33vw;
+    min-height: 475px;
+    background:url(../assets/img/sky-watching.png) no-repeat;
+    background-position: center center;
+    /*background-attachment: fixed;*/
+    background-size: cover;
+    border-bottom: 5px solid #e8491d;
   }
-  
-  .dblBox,
-  .quadBox {
-      flex-direction: row;
-  }
-  .planetBox {
-    flex-direction: column;
-      padding: 1em;
-  }
-  .boxes {
-    flex-direction: column;
-      margin-top: 1em;
-  }
-  .picz {
-  max-width: 80%;
-  }
-  .logo {
-      max-width: 20%;
-  
-  }
-  .boxes,
-  .quadBox,
-  .dblBox { 
-             
+  .flex-master-main-three{
       display:flex;
-}
+  } 
+    
+  .flex-main-1{
+    display:flex;
+    align-items: center;
+    min-height:1fr;
+    width: 33vw;
+    min-height: 475px;
+    background:url(../assets/img/missions.png) no-repeat;
+    background-position: center center;
+    /*background-attachment: fixed;*/
+    background-size: cover;
+    border-bottom: 5px solid #e8491d;
+  }
+  .flex-master-main-two{
+    display:flex;
+  }
+  .flex-main-2{
+    display:flex;
+    align-items: center;
+    min-height:1fr;
+    width: 33vw;
+    min-height: 475px;
+    border:#8b59e7 5px solid;
+    background:url(../assets/img/galaxy.png) no-repeat;
+    background-position: center center;
+    /*background-attachment: fixed;*/
+    background-size: cover;
+    border-bottom: 5px solid #e8491d;
+    .flex-main-3{
+      display:flex;
+      align-items: center;
+      min-height:1fr;
+      width: 50vw;
+      min-height: 475px;
+      background:url(../assets/img/sky-watching.png) no-repeat;
+      background-position: center center;
+      /*background-attachment: fixed;*/
+      background-size: cover;
+      border-bottom: 5px solid #e8491d;
+    }
 }

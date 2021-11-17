@@ -1,15 +1,45 @@
 @media(min-width: 769px) {
-  .planetBox {
-      flex-direction: column;
-      padding: 1em;
-  }
-  
-  .dblBox {
-      display:flex;
-      flex-direction: row;
-  }
-  .picz {
-      max-width: 80%;
-  }
-  
+    .grid-container{
+        border:10px solid rgb(231, 103, 178);
+        width:100vw;
+        position: relative;
+        grid-template-areas:
+        "header header header header"
+        "nav nav nav nav" 
+        "main main" 100px 200px
+        "video video"
+        "footer footer footer footer";
+    }   
+    .grid-item{
+        border:5px solid rgb(125, 201, 55);
+    }
+    .flex-main-1{
+        display:flex;
+        align-items: center;
+        min-height:1fr;
+        width: 50vw;
+        min-height: 475px;
+        background:url(../assets/img/missions.png) no-repeat;
+        background-position: center center;
+        /*background-attachment: fixed;*/
+        background-size: cover;
+        border-bottom: 5px solid #e8491d;
+    }
+    .flex-master-main-two{
+        display:flex;
+    }
+    .flex-main-2{
+        display:flex;
+        align-items: center;
+        min-height:1fr;
+        width: 50vw;
+        min-height: 475px;
+        border:#8b59e7 5px solid;
+        background:url(../assets/img/galaxy.png) no-repeat;
+        background-position: center center;
+        /*background-attachment: fixed;*/
+        background-size: cover;
+        border-bottom: 5px solid #e8491d;
+    }
+
 }

@@ -1,89 +1,58 @@
 @media(min-width: 1601px) {
-    <!--GRID-->
-    .grid-container {
-        display:grid;
-        grid-gap: 1em;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: 12em 1fr;
-    }
-    grid-template-areas:
-        'banner banner'
-        'nav main'
-        'nav footer'
-        ;
-    
-    header {
-        grid-area: header;
-        grid-column: span 2;
-    }
-    grid-gap {
-        background-color: red;
-    }
-    nav {
-        grid-area: nav;
-        grid-row: span 2;
-    }
-    
-
-    
-  body {
-      max-width: 90vw;
-      
-  }
-  header, 
-  .navbar,
-  .main,
-  .intro
-   {
-      padding: .5rem;
-  }
-.macLogo {
-    display:flex;
-    flex-direction: column;
-}
-.logo {
-    max-width: 20%;
-}
-   
-header {
-    flex-direction: row;
-    padding: 2rem;
-    max-height: 10%;
-    justify-content: space-between;
-    margin-top: 2rem;
-}
-  
-  .main {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-  }
-  
-  .intro {
-      width: 50%;
-  }
-  .solarVid {
-      width: 50%;
-  }
-    
-.boxes,
-.quadBox,
-.dblBox {
-    display:flex;
-    flex-direction: row;
-}
-.planetBox {
-    
-    justify-content: space-between;
-}
-
-body {
-        justify-content: center;
+    .flex-main-4{
+        display:flex;
         align-items: center;
-        margin:auto;
+        min-height:1fr;
+        width: 25vw;
+        min-height: 475px;
+        background:url(../assets/img/space-news.png) no-repeat;
+        background-position: center center;
+        /*background-attachment: fixed;*/
+        background-size: cover;
+        border-bottom: 5px solid #e8491d;
+    }
+    .flex-master-main-four{
+        display:flex;
+    }
+    .flex-main-1{
+        display:flex;
+        align-items: center;
+        min-height:1fr;
+        width: 25vw;
+        min-height: 475px;
+        background:url(../assets/img/missions.png) no-repeat;
+        background-position: center center;
+        /*background-attachment: fixed;*/
+        background-size: cover;
+        border-bottom: 5px solid #e8491d;
+    }
+    .flex-master-main-two{
+        display:flex;
+    }
+    .flex-main-2{
+        display:flex;
+        align-items: center;
+        min-height:1fr;
+        width: 25vw;
+        min-height: 475px;
+        border:#8b59e7 5px solid;
+        background:url(../assets/img/galaxy.png) no-repeat;
+        background-position: center center;
+        /*background-attachment: fixed;*/
+        background-size: cover;
+        border-bottom: 5px solid #e8491d;
     }
 
-.picz {
-    max-width: 90%;
-}
+    .flex-main-3{
+        display:flex;
+        align-items: center;
+        min-height:1fr;
+        width: 25vw;
+        min-height: 475px;
+        background:url(../assets/img/sky-watching.png) no-repeat;
+        background-position: center center;
+        /*background-attachment: fixed;*/
+        background-size: cover;
+        border-bottom: 5px solid #e8491d;
+    }
 }
