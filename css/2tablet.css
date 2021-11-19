@@ -1,45 +1,16 @@
 @media(min-width: 769px) {
-    .grid-container{
-        border:10px solid rgb(231, 103, 178);
-        width:100vw;
-        position: relative;
-        grid-template-areas:
-        "header header header header"
-        "nav nav nav nav" 
-        "main main" 100px 200px
-        "video video"
-        "footer footer footer footer";
-    }   
-    .grid-item{
-        border:5px solid rgb(125, 201, 55);
+    .flex-banner{
+        justify-content: space-evenly;
     }
-    .flex-main-1{
-        display:flex;
-        align-items: center;
-        min-height:1fr;
-        width: 50vw;
-        min-height: 475px;
-        background:url(../assets/img/missions.png) no-repeat;
-        background-position: center center;
-        /*background-attachment: fixed;*/
-        background-size: cover;
-        border-bottom: 5px solid #e8491d;
+    .flex-mastermain{
+        flex-direction: row;
     }
-    .flex-master-main-two{
+
+
+    .flex-video{
         display:flex;
-    }
-    .flex-main-2{
-        display:flex;
-        align-items: center;
-        min-height:1fr;
-        width: 50vw;
-        min-height: 475px;
-        border:#8b59e7 5px solid;
-        background:url(../assets/img/galaxy.png) no-repeat;
-        background-position: center center;
-        /*background-attachment: fixed;*/
-        background-size: cover;
-        border-bottom: 5px solid #e8491d;
+        width:40vw;
+        padding:10px sold #333;
     }
 
 }
